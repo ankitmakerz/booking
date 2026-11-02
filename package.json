@@ -80,6 +80,7 @@
     "type-check:ci": "turbo run type-check:ci --log-prefix=none",
     "web": "yarn workspace @calcom/web",
     "changesets-add": "yarn changeset add",
+     "siteground-build": "yarn db-deploy && yarn build",
     "changesets-version": "yarn changeset version",
     "changesets-release": "NODE_OPTIONS='--max_old_space_size=12288' turbo run build-npm --filter=@calcom/atoms && yarn changeset publish",
     "lint-staged": "lint-staged"
