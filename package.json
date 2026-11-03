@@ -58,9 +58,9 @@
     "heroku-postbuild": "turbo run @calcom/web#build",
     "lint:fix": "turbo lint:fix",
     "lint:report": "turbo lint:report",
-    "lint": "turbo lint",
+    "lint": "turbo run lint",
     "postinstall": "(husky install || true) && turbo run post-install"
-    "pre-commit": "lint-staged",
+   "pre-commit": "lint-staged"
     "predev": "echo 'Checking env files'",
     "prisma": "yarn workspace @calcom/prisma prisma",
     "start": "turbo run start --filter=\"@calcom/web\"",
